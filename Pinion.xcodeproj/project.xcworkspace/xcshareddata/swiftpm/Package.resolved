@@ -1,12 +1,13 @@
 {
-  "originHash" : "bf2ad307beeab624556e17e03bc1d6ba4dbec6f8b8f69a12ab1cbc25e7a81e02",
+  "originHash" : "55df34735be77dde4d92b13fbd90e1b9ab472fa212519a415a896f5c0e895487",
   "pins" : [
     {
-      "identity" : "alamofire",
+      "identity" : "appsflyerframework-static",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rg8tv2gc29-tech/Alamofire",
+      "location" : "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static",
       "state" : {
-        "revision" : "3ea8e93ec37a3ae5f255afb529ef20f438dd1903"
+        "revision" : "8b763045b2a788e3fd59f1bde7b74d130286da27",
+        "version" : "6.18.1"
       }
     }
   ],

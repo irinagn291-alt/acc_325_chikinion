@@ -934,6 +934,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinion.reel.Alamofire;
 				PRODUCT_MODULE_NAME = Alamofire;
 				SDKROOT = iphoneos;
@@ -1040,6 +1041,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinion.reel.Alamofire;
 				PRODUCT_MODULE_NAME = Alamofire;
 				SDKROOT = iphoneos;
