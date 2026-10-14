@@ -1,0 +1,12 @@
+Initial release of Chikinion, an offline hands trainer for reaction and digit precision.
+
+• Home "Pin the number" with "Roll", "Pin", and "Seal" on a live 0–9 reel
+• Match plate and five arms: "Precision", "Speed", "Rhythm", "Control", and "Endurance"
+• Pin window that opens on the second tick and stays open for three
+• Marks "Early", "Skew", and "Pin", and grades "S", "A", "B", "C" ("Missed window"), and "D" ("Early or skew")
+• Five-arm radar, "Progress", and "Library" plates
+• "Roll speed" "Floor", "Ceiling", and "Detent", opening at "Floor 2", "Ceiling 6", and "Detent 3"
+• Axis lock after five grades, with refused hops listed under "Lock"
+• "Reset the baseline", "Run onboarding again", "Reset all data", and "Contact"
+
+No account is required. Data stays on this device.

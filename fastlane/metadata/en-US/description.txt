@@ -1,0 +1,19 @@
+Chikinion is an offline hands trainer. A live digit rolls on a reel; you pin when it matches the number on the Match plate, then seal a grade. It is for people practising reaction and digit precision who want graded drills on five arms — Precision, Speed, Rhythm, Control, and Endurance — without an account.
+
+• "Roll", "Pin", and "Seal" drills on a live 0–9 reel
+• Match plate with a target digit and an arm name
+• Five arms: "Precision", "Speed", "Rhythm", "Control", and "Endurance"
+• Pin window opens on the second tick and stays open for three
+• Timeline marks "Early", "Skew" plus a digit, and "Pin"
+• Grades "S", "A", and "B" by third of the open window; "C" "Missed window"; "D" "Early or skew"
+• Five-arm radar that updates when a grade is filed
+• "Progress" list of filed grades and arm means
+• "Library" plates that set axis emphasis for the next Roll
+• "Roll speed" with "Floor", "Ceiling", and "Detent" (opening "Floor 2", "Ceiling 6", "Detent 3")
+• Detent steps up after two "S" grades in the last three on that arm, and down after two "D" grades
+• Axis lock after five grades holds the weakest arm until it clears the next
+• "Lock" list of refused hops
+• "Reset the baseline", "Run onboarding again", and "Reset all data"
+• "Contact" in "Settings" opens the support page
+
+Data stays on this device. English only. Light appearance, portrait only, on iPhone and iPad. Minimum iOS 17.0.

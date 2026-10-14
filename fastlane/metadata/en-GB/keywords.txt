@@ -1,0 +1,1 @@
+offline,trainer,digit,reel,precision,speed,rhythm,control,endurance,drill,grade,reaction,pin,seal

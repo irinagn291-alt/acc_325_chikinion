@@ -1,0 +1,17 @@
+This build shows no permission prompts. No usage-description string is present because no permissions are requested.
+
+There is no login, no in-app purchase, no user-generated content, no account deletion flow, and no App Tracking Transparency prompt. Plate names are local names only.
+
+Chikinion is an offline hands trainer. A live digit rolls on a reel; you pin when it matches the number on the Match plate, then seal a grade. It is for people practising reaction and digit precision who want graded drills on five arms — Precision, Speed, Rhythm, Control, and Endurance — without an account.
+
+No credentials or demo account are needed. On a cold launch the home title "Pin the number" appears first. A spinner may follow if loading takes a moment. If onboarding has not been finished, three full pages follow. Page 1 shows "Pin the live digit." and "Match the prompt on the reel." Tap "Continue". Page 2 shows "Roll, then pin." and "The window opens on the second tick." Tap "Continue". Page 3 shows "Seal files the grade." and "The radar moves after five results." Tap "Start". "Skip" on any page ends onboarding and opens home. On a device, home then shows "Run the first drill" and "Pin the digit that matches Prompt". Tap "Roll". While rolling, the line reads "Pin when the number reads" plus the Match number. Tap "Pin" when the live number matches, then tap "Seal". A matching pin files during the three open ticks; "Seal" files "S", "A", or "B". The chip row "Library", "Progress", "Settings", and "Lock" opens those sheets. Empty Library shows "No plates yet." and "Add a plate", which fills "Precision plate" (or the Axis already chosen) if the name is blank. Progress shows "No grades filed." until a grade is filed, then letters, means, and rows such as "S · Oct 14, 2026". Settings shows "Roll speed" with "Floor", "Ceiling", and "Detent", plus "Reset the baseline", "Run onboarding again", "Reset all data", and "Contact". "Lock" opens "Axis lock". Separate sheets titled "Roll", "Pin", and "Seal" explain the pass; pin and seal from home. On Simulator the first run can already be mid-pass on "Endurance", with "Pin" enabled, plates "Precision plate" and "Speed plate", and four grades filed. A rolling or pinned pass is kept if you leave and come back. Mid-onboarding is not kept.
+
+Data stays on this device. "Contact" in "Settings" opens the support page.
+
+The app is English only. Progress dates use English month names. Whole numbers and one-decimal means follow the device decimal style, without grouping. Behaviour does not otherwise differ by region.
+
+No licence or regulated-industry paperwork applies. This is an education drill for reaction and digit precision and does not operate in a regulated industry.
+
+The app does not show health, medical, or product-health information. It is a personal log only and gives no recommendations.
+
+The app does not scan barcodes or QR codes.
