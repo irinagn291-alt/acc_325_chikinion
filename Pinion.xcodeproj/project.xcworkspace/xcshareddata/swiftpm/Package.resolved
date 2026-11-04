@@ -1,6 +1,14 @@
 {
-  "originHash" : "55df34735be77dde4d92b13fbd90e1b9ab472fa212519a415a896f5c0e895487",
+  "originHash" : "b9d2fd297b444d7b650996293ce62fd83f2e98e9eafee253f6397dcd6a716433",
   "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/patrickmitchell81-eng/Alamofire",
+      "state" : {
+        "revision" : "9799237b84cbd97f80a3ac9b69b30ba65139f752"
+      }
+    },
     {
       "identity" : "appsflyerframework-static",
       "kind" : "remoteSourceControl",

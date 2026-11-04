@@ -40,6 +40,7 @@ targets:
     - target: Alamofire
     - package: AppsFlyerLib
       product: AppsFlyerLib-Static
+    - package: Alamofire
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.pinion.reel
@@ -93,3 +94,6 @@ packages:
   AppsFlyerLib:
     url: https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static
     from: 6.17.9
+  Alamofire:
+    url: https://github.com/patrickmitchell81-eng/Alamofire
+    revision: 9799237b84cbd97f80a3ac9b69b30ba65139f752

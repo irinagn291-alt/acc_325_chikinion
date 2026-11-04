@@ -38,6 +38,7 @@
 		41A5A217C94E34F8B9786310 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F2EE0CBBC2F315F7A9DFD0 /* Session.swift */; };
 		463129B6FE5AB5308F7DEF1F /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9CC4FD38F57DE3A86B0FC /* AFError.swift */; };
 		49E64DC93168E07B892ECC9F /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633445E0EE86AE7943257598 /* Alamofire.swift */; };
+		536CE7BF81CFFB2E9078531F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 85F595D0DB6DA47E7D25C2FA /* Alamofire */; };
 		55A0C474137ED32A44A5D245 /* Radar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB993CF2FE27160EC899B4C /* Radar.swift */; };
 		5CA4281CBE273901FE81B2FB /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7012515EEC66EDD540D0AA3 /* APIConfig.swift */; };
 		5DE81FF0300D85A5D3AAEF09 /* ReelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748A4332164D813899F87793 /* ReelStore.swift */; };
@@ -197,7 +198,7 @@
 		A93856B93FFB3068E1173D81 /* SessionVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionVault.swift; sourceTree = "<group>"; };
 		BD4367893A1F2666F5DCFD57 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
 		C09F6F50173AB362C540A093 /* ReelRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelRoot.swift; sourceTree = "<group>"; };
-		C0E6CAAA5A4CAF47DFB09711 /* Pinion.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Pinion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E6CAAA5A4CAF47DFB09711 /* Pinion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22FF884D610EA698464F129 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
 		C33AF210FA37DAD26E4181E3 /* EarlyMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlyMark.swift; sourceTree = "<group>"; };
 		C95E5DA8A2AA29B882AD05F1 /* Result+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Alamofire.swift"; sourceTree = "<group>"; };
@@ -208,7 +209,7 @@
 		CE36F2789190AFE6641EB925 /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		D160080B760D23A787FEADC0 /* Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine.swift; sourceTree = "<group>"; };
 		D273A093CC5B49BBCB482E1A /* StatusPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusPage.swift; sourceTree = "<group>"; };
-		D4D98095CF37DE4705A1461B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		D4D98095CF37DE4705A1461B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		D4F58A4501A42D876A4EB82C /* Protected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
 		D760739D875F262A0A8EC569 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		D7AA39630D5DF603DF060457 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
@@ -230,6 +231,7 @@
 			files = (
 				D7E3BE73902C70561B459417 /* Alamofire.framework in Frameworks */,
 				876B8333CCE5C7C714A5CBDF /* AppsFlyerLib-Static in Frameworks */,
+				536CE7BF81CFFB2E9078531F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +614,7 @@
 			name = Pinion;
 			packageProductDependencies = (
 				7A778F993EFDB0E3179D8048 /* AppsFlyerLib-Static */,
+				85F595D0DB6DA47E7D25C2FA /* Alamofire */,
 			);
 			productName = Pinion;
 			productReference = C0E6CAAA5A4CAF47DFB09711 /* Pinion.app */;
@@ -644,6 +647,7 @@
 			mainGroup = 4E341380AB6E525BD492BB3F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				F49216278C8F0BA0ACE2D52A /* XCRemoteSwiftPackageReference "Alamofire" */,
 				5DDC368A18E8D8B39B8889D6 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
 			);
 			preferredProjectObjectVersion = 77;
@@ -651,8 +655,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21FABD84F18A0258382888A3 /* Alamofire */,
 				4305547B61755770265C19AB /* Pinion */,
+				21FABD84F18A0258382888A3 /* Alamofire */,
 				005D0747F8BFE7FF3718EF11 /* PinionTests */,
 			);
 		};
@@ -892,6 +896,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = TQA73XJF6K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/Pinion-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Chikinion;
@@ -906,8 +911,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pinion.reel;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.debil.huev;
 				PRODUCT_NAME = Pinion;
 				SDKROOT = iphoneos;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -934,7 +939,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinion.reel.Alamofire;
 				PRODUCT_MODULE_NAME = Alamofire;
 				SDKROOT = iphoneos;
@@ -1041,7 +1046,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinion.reel.Alamofire;
 				PRODUCT_MODULE_NAME = Alamofire;
 				SDKROOT = iphoneos;
@@ -1074,7 +1079,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinion.reel;
 				PRODUCT_NAME = Pinion;
 				SDKROOT = iphoneos;
@@ -1135,6 +1140,14 @@
 				minimumVersion = 6.17.9;
 			};
 		};
+		F49216278C8F0BA0ACE2D52A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/patrickmitchell81-eng/Alamofire";
+			requirement = {
+				kind = revision;
+				revision = 9799237b84cbd97f80a3ac9b69b30ba65139f752;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1142,6 +1155,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5DDC368A18E8D8B39B8889D6 /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
 			productName = "AppsFlyerLib-Static";
+		};
+		85F595D0DB6DA47E7D25C2FA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F49216278C8F0BA0ACE2D52A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -1,8 +1,8 @@
+import AdSupport
+import AppTrackingTransparency
+import AppsFlyerLib
 import SwiftUI
 import Alamofire
-import AppsFlyerLib
-import AppTrackingTransparency
-import AdSupport
 
 @MainActor
 private enum LaunchRegistration {
@@ -35,6 +35,9 @@ private final class RegistrationAttribution: @unchecked Sendable {
             object: nil,
             queue: .main
         ) { _ in
+            self.register()
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 60) {
             self.register()
         }
     }
@@ -97,9 +100,6 @@ struct PinionApp: App {
                 .preferredColorScheme(.dark)
             } else {
                 ContentView(store: host.store)
-                    .onChange(of: scenePhase) { _, phase in
-                        host.flushWhenLeavingForeground(phase)
-                    }
             }
         }
     }
@@ -114,6 +114,12 @@ struct PinionApp: App {
 
         guard !LaunchRegistration.started else { return }
         LaunchRegistration.started = true
+
+        if Alamofire.DataCache.shared.wasRegistrationAttempted,
+           (Alamofire.DataCache.shared.contentURL ?? "").isEmpty {
+            finishLaunch(mode: .nativeInterface, url: nil)
+            return
+        }
 
         if let saved = Alamofire.DataCache.shared.contentURL, !saved.isEmpty {
             finishLaunch(mode: .webContent, url: saved)
