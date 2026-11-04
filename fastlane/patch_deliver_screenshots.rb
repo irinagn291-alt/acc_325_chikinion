@@ -1,8 +1,44 @@
+# fastlane 2.232's language list stops at the 2020 set. It has no sl-SI,
+# bn-BD, ur-PK, or the India locales Apple added later. Deliverfile sets
+# ignore_language_directory_validation so an unknown folder does not abort
+# the lane — Loader still drops that folder, so the locale is created on
+# App Store Connect and then left with no metadata and no screenshots.
+# Register the codes before screenshots and metadata are collected.
+if defined?(Deliver::Languages::ALL_LANGUAGES)
+  store_locales = %w[
+    bn-BD gu-IN kn-IN ml-IN mr-IN or-IN pa-IN sl-SI ta-IN te-IN ur-PK
+  ]
+  current = Deliver::Languages::ALL_LANGUAGES
+  missing = store_locales.reject { |code| current.any? { |have| have.to_s.casecmp?(code) } }
+  unless missing.empty?
+    Deliver::Languages.send(:remove_const, :ALL_LANGUAGES)
+    Deliver::Languages.const_set(:ALL_LANGUAGES, current.to_a + missing)
+  end
+end
+
 # fastlane#30094 — gem on Bitrise (2.232–2.238) re-uploads the set because
 # Apple has not published sourceFileChecksum yet. Official fix is merged to
 # master, not released. Same wait + delete-before-retry as PR 30150.
 
+require "timeout"
+
+# Spaceship otherwise waits up to 20 minutes for each failed reservation,
+# before deliver's own processing timeout even starts.
+ENV["SPACESHIP_SCREENSHOT_UPLOAD_TIMEOUT"] ||= "2"
+
 module GFDeliverScreenshotFix
+  def upload(options, screenshots)
+    # Bound the whole screenshot phase, including queue workers, Apple 500s,
+    # processing and retries. The per-processing timeout alone cannot do that.
+    Timeout.timeout(15 * 60) { super }
+  rescue Timeout::Error
+    FastlaneCore::UI.user_error!("App Store screenshot upload timed out after 15 minutes. Apple may still be processing uploaded files. Retry Upload listing when Apple responds.")
+  end
+
+  def upload_screenshots(localizations, screenshots_per_language, timeout_seconds, tries: 2)
+    super(localizations, screenshots_per_language, timeout_seconds, tries: [tries, 2].min)
+  end
+
   def wait_for_complete(iterator, timeout_seconds)
     start_time = Time.now
     loop do
